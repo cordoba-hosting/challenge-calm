@@ -1,0 +1,14 @@
+.document {
+    max-width: 85rem;
+    text-align: justify;
+    * {
+        line-height: 1.5;
+        margin-bottom: 2rem;
+    }
+    ul {
+        margin-inline-start: 4rem;
+    }
+    strong {
+        font-family: $font-sans;
+    }
+}

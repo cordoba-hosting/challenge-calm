@@ -1,0 +1,30 @@
+.navbar__section{    
+    &--wrapper-content{
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+    }
+    &--content{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        @include respond(max-md){
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .custom-logo{
+            @include respond(max-md){
+                width: 92px;
+                height: 27px;
+            }
+            
+        }
+
+        
+    }
+}

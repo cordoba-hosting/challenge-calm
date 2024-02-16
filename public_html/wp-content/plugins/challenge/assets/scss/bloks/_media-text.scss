@@ -1,0 +1,122 @@
+.media-text-blok {
+  padding: $padding-mobile;
+  @include respond(min-md) {
+    padding: $padding-desktop;
+  }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    @include respond(max-lg){
+      justify-content: center;
+    }
+  }
+  &__media {
+    order: 2;
+    width: 100%;
+    @include respond(min-lg) {
+      order: 1;
+      width: calc(50% - 8rem);
+    }
+    &--right {
+      order: 2;
+    }
+    &--with-offset-box{
+      position: relative;
+      @include respond(min-lg) {
+        width: calc(50% - 2rem);
+      }
+      .media-image{
+        display: block;
+      }
+    }
+  }
+  &__text {
+    order: 1;
+    width: 100%;
+    
+    @include respond(min-lg) {
+      order: 2;
+      width: calc(50% - 2rem);
+    }
+    &--left {
+      order: 1;
+    }
+    &--with-offset-box{
+      @include respond(min-lg) {
+        width: calc(50% - 14rem);
+      }
+    }
+    .label{
+      font-size: $size-h5;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $color-green-dark;
+    }
+  }
+  .text{
+    &__heading{
+      font-family: $font-sans;
+      font-size: $size-h2;
+      margin: 1rem 0;
+    }
+    &__address{
+      .icon-location{
+        color: $color-orange;
+        font-size: $size-h5;
+        margin-right: 0.8rem;
+      }
+    }
+    &__body{
+      margin-block-start: 2rem;
+      margin-block-end: 2rem;
+      &.large{
+        font-size: $size-p-lg;
+        line-height: 160%;
+      }
+      ul{
+        list-style: inside;
+        line-height: 170%;
+        padding-inline-start: 6px;
+      }
+    }
+  }
+
+  .offset-box{
+    background-color: $color-green-dark;
+    position: absolute;
+    bottom: 0;
+    left: -10rem;
+    padding: 2.5rem 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include respond(max-lg){
+      
+      position: relative;
+      left: unset;
+      bottom: unset;
+    }
+    &__icon{
+      width: 2rem;
+      margin-right: 1.5rem;
+    }
+    &__text{ 
+      text-align: center;
+      color: $color-white;
+      $font-family: $font-sans;
+      line-height: unset;
+    }
+    ul{
+      list-style: none;
+    }
+    li{
+      display: flex;
+      align-items: center;
+      padding: 1.2rem 0;
+    }
+
+  }
+}

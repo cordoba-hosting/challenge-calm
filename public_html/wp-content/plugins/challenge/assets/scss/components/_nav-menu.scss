@@ -1,0 +1,92 @@
+.nav-menu {
+  display: none;
+  &.visible{
+    display: inline-block;
+  }
+  @include respond(min-md) {
+    display: inline-block;
+  }
+  @include respond(max-md) {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    width: 100%;
+  }
+  .main-menu {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+    @include respond(max-md){
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .nav-item {
+      position: relative;
+      @include respond(max-md){
+        padding-bottom: 4rem;
+      }
+
+      .icon-chevron-down{
+        margin-left: 10px;
+        color: $color-green-dark;
+        @include respond(max-md){
+          color: $color-black;
+          margin-left: 0;
+        }
+        
+      }
+      .nav-link, span {
+        display: flex;
+        align-items: center;
+        color: $color-black;
+        font-family: $font-sans;
+        font-weight: 700;
+        &:hover {
+          color: $color-green-dark;
+        }
+        // &:active{
+        //   color: $color-green-dark;
+        // }
+        @include respond(max-md){
+          justify-content: space-between;
+          padding: 0;
+          font-size: $size-h2;
+        }
+      }
+      .sub-menu {
+        position: absolute;
+        top: 100%;
+        list-style: none;
+        display: none;
+        @include respond(max-md){
+          position: relative;
+        }
+        
+        &.visible {
+          display: block;
+          @include respond(min-md){
+            background-color: white;
+            border: solid 1px $color-gray;
+            top: 4.5rem;
+            left: 1rem;
+            &::before{
+              position: absolute;
+              top: -1.45rem;
+              border-left: 1.5rem solid transparent;
+              border-right: 1.5rem solid transparent;
+              display: block;
+              border-bottom: 1.5rem solid white;
+              filter: drop-shadow(0px -1px 0px #BBBBBB);
+              content: " ";
+            }
+          }
+        }
+        .nav-item{
+          width: max-content;
+          padding: 0 2rem;
+          margin: 2rem 0;
+        }
+      }
+    }
+  }
+}

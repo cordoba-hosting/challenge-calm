@@ -1,0 +1,9 @@
+.breadcrumbs {
+  &__breadcrumb {
+    color: $color-gray-dark;
+    text-decoration: none;
+    font-size: $size-h5;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+  }
+}

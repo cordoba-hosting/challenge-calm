@@ -1,0 +1,19 @@
+@import 'variables';
+
+.contact{
+
+    &__title{
+        text-align: center;
+    }
+    &__message{
+        margin: 6rem 0;
+        text-align: center;
+    }
+    &-info{
+        display: flex;
+        justify-content: space-between;
+        h2{
+            font-size: 3rem;
+        }
+    }
+}

@@ -1,0 +1,5 @@
+// Retrieve $spacers Sass maps
+
+@function theme-spacer($key) {
+    @return map-get($spacers, $key); 
+}
