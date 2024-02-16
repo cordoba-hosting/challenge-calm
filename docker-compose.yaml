@@ -1,0 +1,54 @@
+version: "3"
+services:
+  empty-wp-db:
+    image: mysql:5.7
+    restart: "no"
+    volumes:
+      - empty-wp-data-57:/var/lib/mysql
+    ports:
+      - 3306:3306
+    command: --max-allowed-packet=32505856 --sql_mode=""
+    environment:
+      MYSQL_ROOT_PASSWORD: wordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    networks:
+      - empty-wp
+
+  empty-wp-www:
+    build:
+      context: "."
+      dockerfile: "docker/Dockerfile"
+    hostname: "empty-wp-www"
+    container_name: "empty-wp-www"
+    entrypoint: "/entrypoint.sh"
+    command: ["httpd-foreground"]
+    ports:
+      - "80:80"
+    volumes:
+      - "./public_html/:/usr/local/www"
+    working_dir: "/usr/local/www"
+    networks:
+      - empty-wp
+
+
+  empty-wp-pma:
+    depends_on:
+      - empty-wp-db
+    image: phpmyadmin/phpmyadmin
+    restart: "no"
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: empty-wp-db
+      MYSQL_ROOT_PASSWORD: password
+      UPLOAD_LIMIT: 500M
+    networks:
+      - empty-wp
+
+networks:
+  empty-wp:
+
+volumes:
+  empty-wp-data-57:
