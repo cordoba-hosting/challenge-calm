@@ -5,7 +5,7 @@ class Setup
 {
     static function init()
     {
-        add_action('init', [self::class, 'blockConsumeApiInit'] );
+        add_action('init', [self::class, 'blockCarroDeComprasInit'] );
         add_action('admin_menu', [self::class, 'addAdminMenu']);
 
     }
@@ -48,7 +48,7 @@ class Setup
         echo 'display Sub Menu';
     }
 
-    static function blockConsumeApiInit(){
-        register_block_type( __DIR__ . '/../blocks/consume-api/build' );
+    static function blockCarroDeComprasInit(){
+        register_block_type( __DIR__ . '/../blocks/carrito/build' );
     }
 }
