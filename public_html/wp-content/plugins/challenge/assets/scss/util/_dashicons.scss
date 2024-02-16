@@ -1,0 +1,22 @@
+@mixin dashicons() {
+  display: inline-block;
+  font-family: '#{$font-icon}';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.dashicons-blok-party {
+  &:before {
+    @include dashicons();
+    content: $icon-blok-party;
+  }
+}
+.dashicons-creed {
+  &:before {
+    @include dashicons();
+    content: $icon-creed;
+  }
+}

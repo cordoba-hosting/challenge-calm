@@ -1,0 +1,35 @@
+.back-to-top-button {
+    background-color: $color-black;
+    color: white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    border: none;
+    box-shadow: $box-shadow;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    transition: $transition;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+    .icon-arrow-down {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 1;
+        transform: rotate(180deg);
+    }
+    &:hover {
+        background-color: $color-gray;
+        color: $color-black;
+    }
+}

@@ -9,13 +9,13 @@
 1. Clona el repositorio del Challenge Plugin:
 
     ```bash
-    git clone https://github.com/tu-usuario/challenge-plugin.git
+    git clone https://github.com/cordoba-hosting/challenge-calm
     ```
 
 2. Accede al directorio del proyecto:
 
     ```bash
-    cd challenge-plugin
+    cd challenge-calm
     ```
 
 3. Ejecuta el siguiente comando para construir el entorno de desarrollo con Docker:
@@ -49,6 +49,10 @@
     ```bash
     composer update
     ```
+    Desde el directorio del bloque /public_html/wp-contents/plugin/challenge/blocks/consume-api actualizar dependencias de Node
+    ```bash
+    npm update
+    ```
 
 11. Crea una nueva página en WordPress e inserta un bloque llamado "consume-api" para agregar las funcionalidades a la página.
 
@@ -71,4 +75,4 @@ Para crear un nuevo bloque, sigue estos pasos:
     npx @wordpress/create-block@latest challenge-block --variant=dynamic
     ```
 
-¡Listo! Ahora deberías tener el Challenge Plugin instalado y configurado en tu entorno de desarrollo de WordPress con Docker.
+

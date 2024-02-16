@@ -1,0 +1,90 @@
+.homepage-hero{
+  height: 54.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &--background-img{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+  }
+
+  &-grid{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr fit-content(38.4rem) 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 1.8rem;
+    row-gap: 1.8rem;
+
+    @include respond(max-md){
+      grid-template-columns: repeat(2, fit-content(17.5rem));
+      grid-template-rows: fit-content(39.0rem) 1fr;
+      row-gap: 4.2rem;
+    }
+
+    &__item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+  }
+
+  &__form{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    height: 39.0rem;
+    width: 38.4rem;
+    // max-width: 384px;
+    background: $color-white;
+
+    @include respond(max-md){
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 1;
+      width: 36.7rem;
+    }
+  }
+
+  &__cta{
+    background-color: rgba(255, 255, 255, .8);
+    max-width: 28.0rem;
+
+    .cta--text{
+      white-space: nowrap;
+    }
+    @include respond(max-md){
+      .cta{
+        width: 17.5rem;
+      }
+    }
+    &--left{
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+      // padding-inline-end: 1rem;
+      @include respond(max-md){
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+        width: 100%;
+      }
+    }
+    &--right{
+      grid-column: 3 / span 1;
+      grid-row: 1 / span 1;
+      // padding-inline-start: 1rem; 
+      @include respond(max-md){
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+        width: 100%;
+      }
+    }
+  }
+}

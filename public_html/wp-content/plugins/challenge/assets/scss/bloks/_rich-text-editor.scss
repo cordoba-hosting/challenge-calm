@@ -1,0 +1,20 @@
+.rich-text-editor-blok{
+    padding: $padding-mobile;
+    @include respond(min-md) {
+        padding: $padding-desktop;
+    }
+    .container{
+        margin:auto;
+        &--one-third {
+            max-width: $one-third-width;
+        }
+        &--one-half {
+            max-width: $one-half-width;
+        }
+        &--three-quarters {
+            @include respond(min-lg) {
+                max-width: $three-quarters-width;
+            }
+        }
+    }
+}

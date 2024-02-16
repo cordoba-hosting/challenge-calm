@@ -1,0 +1,18 @@
+.social-links {
+    display: flex;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+    &__mobile{
+        @include respond(min-sm){
+            display: none;
+        }
+    }
+    &__desktop{
+        @include respond(max-sm){
+            display: none;
+        }
+    }
+    .social-link {
+        text-decoration: none;
+    }
+}

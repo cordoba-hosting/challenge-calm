@@ -1,0 +1,35 @@
+.buttons-group-blok {
+  display: block;
+
+  .text-start {
+    text-align: left;
+  }
+
+  .text-end {
+    text-align: right;
+
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  a {
+    background-color: $color-black;
+    border: 1px solid $color-black;
+    color: $color-white;
+    padding: 1rem 2.4rem;
+    cursor: pointer;
+    float: none;
+    width: auto;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $color-green;
+    }
+
+    & + a {
+      margin-left: 1rem;
+    }
+  }
+}

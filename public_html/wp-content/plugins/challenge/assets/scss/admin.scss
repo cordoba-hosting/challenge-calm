@@ -1,0 +1,61 @@
+$is-wp-admin: true;
+
+@import "../../node_modules/bootstrap/scss/functions";
+
+@import "variables";
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/helpers";
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+@import "admin/adminVariables";
+@import "admin/adminTheme";
+
+@import "util";
+
+@import "base";
+
+#wpwrap {
+    a {
+        font-size: 13px;
+    }
+}
+
+#editor {
+    a {
+        font-size: unset;
+    }
+    .editor-styles-wrapper {
+        @import "common";
+        @import "components";
+        @import "elements";
+        @import "bloks";
+        @import "templates";     
+        @import "libraries";    
+
+        .wp-block{
+            max-width: 1250px;
+        }
+        
+        .edit-post-layout{
+            overflow-x: hidden;
+        }  
+        
+        .button-primary {
+            color: $color-white;
+            border-block-end: none;
+        }
+    }
+
+}
+
+.js .closed.show-field-keys .inside {
+    display: block;
+}
+

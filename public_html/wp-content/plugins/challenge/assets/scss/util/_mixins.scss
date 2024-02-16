@@ -1,0 +1,107 @@
+@mixin transition($property, $duration) {
+    -moz-transition: $property #{$duration}ms cubic-bezier(0, 0, .21, 1.18);
+    -o-transition: $property #{$duration}ms cubic-bezier(0, 0, .21, 1.18);
+    -webkit-transition: $property #{$duration}ms cubic-bezier(0, 0, .21, 1.18);
+    transition: $property #{$duration}ms cubic-bezier(0, 0, .21, 1.18);
+    -ms-transition: $property #{$duration}ms cubic-bezier(0, 0, .21, 1.18);
+}
+
+@mixin bg-image() {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@mixin centerEL() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin respond($breakpoint) {
+    // BOOTSTRAP 5 BREAKPOINTS
+    @if $breakpoint == max-sm {
+        // Screen Size < 576px
+        @media only screen and (max-width: 36em) {
+            @content;
+        }
+    }
+    @if $breakpoint == min-sm {
+        // Screen Size > 576px
+        @media only screen and (min-width: 36em) {
+            @content;
+        }
+    }
+    @if $breakpoint == only-sm {
+        // 576px < Screen Size < 768px
+        @media only screen and (min-width: 36em) and (max-width: 48em) {
+            @content;
+        }
+    }
+    @if $breakpoint == max-md {
+        // Screen Size < 768px
+        @media only screen and (max-width: 48em) {
+            @content;
+        }
+    }
+    @if $breakpoint == min-md {
+        // Screen Size > 768px
+        @media only screen and (min-width: 48em) {
+            @content;
+        }
+    }
+    @if $breakpoint == only-md {
+        // 768px < Screen Size < 992px
+        @media only screen and (min-width: 48em) and (max-width: 62em) {
+            @content;
+        }
+    }
+    @if $breakpoint == max-lg {
+        // Screen Size < 992px
+        @media only screen and (max-width: 62em) {
+            @content;
+        }
+    }
+    @if $breakpoint == min-lg {
+        // Screen Size > 992px
+        @media only screen and (min-width: 62em) {
+            @content;
+        }
+    }
+    @if $breakpoint == only-lg {
+        // 992px < Screen Size < 1200px
+        @media only screen and (min-width: 62em) and (max-width: 75em) {
+            @content;
+        }
+    }
+    @if $breakpoint == max-xl {
+        // Screen Size < 1200px
+        @media only screen and (max-width: 75em) {
+            @content;
+        }
+    }
+    @if $breakpoint == min-xl {
+        // Screen Size > 1200px
+        @media only screen and (min-width: 75em) {
+            @content;
+        }
+    }
+    @if $breakpoint == only-xl {
+        // 1200px < Screen Size < 1600px
+        @media only screen and (min-width: 75em) and (max-width: 100em) {
+            @content;
+        }
+    }
+    @if $breakpoint == max-xxl {
+        // Screen Size < 1600px
+        @media only screen and (max-width: 100em) {
+            @content;
+        }
+    }
+    @if $breakpoint == min-xxl {
+        // Screen Size > 1600px
+        @media only screen and (min-width: 100.0625em) {
+            @content;
+        }
+    }
+}

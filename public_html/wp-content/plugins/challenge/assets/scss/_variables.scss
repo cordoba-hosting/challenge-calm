@@ -1,0 +1,105 @@
+//== COLOR VARIABLES ==//
+
+$color-orange: #F78E1E;
+$color-orange-light: #FAAD60;
+$color-green-dark: #00553D;
+$color-green: #417B68;
+$color-green-light: #639281;
+
+
+//== STANDARD COLOR VARIABLES ==//
+
+$color-white:        #FFFFFF;
+$color-gray-light:   #F1F1F1;;
+$color-gray:         #BBBBBB;
+$color-gray-dark:    #7A7A7A;
+$color-gray-darkest: #29292F;
+$color-black:        #0E0D0D;
+
+//== SIZE VARIABLES ==//
+
+$size-h1:   4.6rem;
+$size-h2:   3.2rem;
+$size-h3:   2.2rem;
+$size-h4:   1.6rem;
+$size-h5:   1.4rem;
+$size-h6:   1.2rem;
+
+$size-p-lg: 1.8rem;
+$size-p:    1.6rem;
+
+
+//== FONT VARIABLES ==//
+
+$font-path:   '../fonts';
+$font-icon:   'mvta';
+$font-sans:   'WorkSans';
+$font-footer: 'Poppins';
+
+//== ICON VARIABLES ==//
+
+$icon-eye: "\e902";
+$icon-divider: "\e914";
+$icon-minus: "\e900";
+$icon-plus: "\e901";
+$icon-check: "\e904";
+$icon-search: "\e905";
+$icon-hamburger: "\e906";
+$icon-close: "\e907";
+$icon-chevron-up: "\e908";
+$icon-exclamation: "\e909";
+$icon-location: "\e90a";
+$icon-exclamation-border: "\e90b";
+$icon-close-heavy: "\e90c";
+$icon-chevron-left: "\e90d";
+$icon-chevron-right: "\e90e";
+$icon-chevron-down: "\e911";
+$icon-arrow-left: "\e912";
+$icon-arrow-right: "\e913";
+$icon-download: "\f019";
+$icon-envelope: "\f003";
+$icon-external-link: "\e915";
+$icon-facebook: "\e916";
+$icon-instagram: "\e917";
+$icon-linkedin: "\e918";
+$icon-pdf: "\f1c1";
+$icon-print: "\f02f";
+$icon-rebel: "\e919";
+$icon-twitter: "\e91a";
+$icon-youtube: "\e91b";
+$icon-blok-party: "\e910";
+$icon-creed: "\e90f";
+
+
+
+
+
+//== GRADIENT VARIABLES ==//
+
+//== DESIGN VARIABLES ==//
+
+$box-shadow:            0 .5rem 1rem rgba($color-black, 50%);
+$transition:            all .5s ease-out;
+
+$border:                1px solid $color-gray;
+
+$three-quarters-width:  82.4rem;
+$one-half-width:        59.5rem;
+$one-third-width:       41.2rem;
+
+$padding-mobile:        5rem 2rem;
+$padding-desktop:       8rem 0;
+$padding-desktop-small: 6rem 0;
+$padding-desktop-large: 14rem 0;
+
+$spacing-desktop-x:     0 15rem;
+$spacing-mobile-x:      0px 2rem;
+
+//== ANIMATION VARIABLES ==//
+
+$animate-duration: 1s;
+$animate-delay: 1s;
+$animate-repeat: 1;
+
+//== BOOTSTRAP VARIABLES ==//
+

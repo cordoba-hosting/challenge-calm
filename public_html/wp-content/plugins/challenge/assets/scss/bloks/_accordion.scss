@@ -1,0 +1,15 @@
+.accordion-element {
+    padding: $padding-mobile;
+    @include respond(min-md) {
+        padding: $padding-desktop;
+    }
+    &__accordion{
+        margin-block-start: 2rem;
+    }
+    &__heading {
+        margin-block-end: 2.4rem;
+        @include respond(min-md) {
+            margin-block-end: 4rem;
+        }
+    }
+}

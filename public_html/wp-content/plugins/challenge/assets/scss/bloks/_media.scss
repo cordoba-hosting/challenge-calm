@@ -1,0 +1,16 @@
+.media-blok {
+  padding: $padding-mobile;
+  @include respond(min-md) {
+    padding: $padding-desktop;
+  }
+  .container {
+    &--three-quarters {
+      @include respond(min-lg) {
+        max-width: $three-quarters-width;
+      }
+    }
+    &--half {
+      max-width: $one-half-width;
+    }
+  }
+}

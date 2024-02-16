@@ -1,1 +1,0 @@
-{"version":1,"defects":{"CuentaTest::testGetSaldo":8,"CuentaTest::testSetSaldo":8},"times":{"CuentaTest::testGetSaldo":0.002,"CuentaTest::testSetSaldo":0}}

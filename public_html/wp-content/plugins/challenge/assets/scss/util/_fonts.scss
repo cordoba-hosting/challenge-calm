@@ -1,0 +1,150 @@
+//== SANS-SERIF FONT FAMILY (Work Sans)
+
+@font-face {
+    font-family: "#{$font-sans}";
+    src: url("#{$font-path}/#{$font-sans}-ExtraLight.ttf");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "#{$font-sans}";
+    src: url("#{$font-path}/#{$font-sans}-ExtraLightItalic.ttf");
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: "#{$font-sans}";
+    src: url("#{$font-path}/#{$font-sans}-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "#{$font-sans}";
+    src: url("#{$font-path}/#{$font-sans}-LightItalic.ttf");
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: "#{$font-sans}";
+    src: url("#{$font-path}/#{$font-sans}-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "#{$font-sans}";
+    src: url("#{$font-path}/#{$font-sans}-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: "#{$font-sans}";
+    src: url("#{$font-path}/#{$font-sans}-SemiBold.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "#{$font-sans}";
+    src: url("#{$font-path}/#{$font-sans}-SemiBoldItalic.ttf");
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: "#{$font-sans}";
+    src: url("#{$font-path}/#{$font-sans}-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "#{$font-sans}";
+    src: url("#{$font-path}/#{$font-sans}-BoldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: "#{$font-sans}";
+    src: url("#{$font-path}/#{$font-sans}-Black.ttf");
+    font-weight: 900;
+}
+@font-face {
+    font-family: "#{$font-sans}";
+    src: url("#{$font-path}/#{$font-sans}-BlackItalic.ttf");
+    font-weight: 900;
+    font-style: italic;
+}
+
+//== Font Footer
+@font-face {
+    font-family: "#{$font-footer}";
+    src: url("#{$font-path}/#{$font-footer}-ExtraLight.ttf");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "#{$font-footer}";
+    src: url("#{$font-path}/#{$font-footer}-ExtraLightItalic.ttf");
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: "#{$font-footer}";
+    src: url("#{$font-path}/#{$font-footer}-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "#{$font-footer}";
+    src: url("#{$font-path}/#{$font-footer}-LightItalic.ttf");
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: "#{$font-footer}";
+    src: url("#{$font-path}/#{$font-footer}-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "#{$font-footer}";
+    src: url("#{$font-path}/#{$font-footer}-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: "#{$font-footer}";
+    src: url("#{$font-path}/#{$font-footer}-SemiBold.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "#{$font-footer}";
+    src: url("#{$font-path}/#{$font-footer}-SemiBoldItalic.ttf");
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: "#{$font-footer}";
+    src: url("#{$font-path}/#{$font-footer}-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "#{$font-footer}";
+    src: url("#{$font-path}/#{$font-footer}-BoldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: "#{$font-footer}";
+    src: url("#{$font-path}/#{$font-footer}-Black.ttf");
+    font-weight: 900;
+}
+@font-face {
+    font-family: "#{$font-footer}";
+    src: url("#{$font-path}/#{$font-footer}-BlackItalic.ttf");
+    font-weight: 900;
+    font-style: italic;
+}
+
+//== FONT ICON
+
+@font-face {
+    font-family: '#{$font-icon}';
+    src:    url('#{$font-path}/#{$font-icon}.eot?pf14di');
+    src:    url('#{$font-path}/#{$font-icon}.eot?pf14di#iefix') format('embedded-opentype'),
+            url('#{$font-path}/#{$font-icon}.ttf?pf14di') format('truetype'),
+            url('#{$font-path}/#{$font-icon}.woff?pf14di') format('woff'),
+            url('#{$font-path}/#{$font-icon}.svg?pf14di##{$font-icon}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}

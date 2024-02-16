@@ -1,0 +1,25 @@
+$adminBg : #ebebeb;
+
+$adminMenu-bg    : #3d3d3d;
+$adminMenu-width : 180px;
+
+$adminRightCol-width : 320px;
+
+$adminColor-accent : #2e2e2e;
+$adminColor-links  : #1c7d8e;
+$adminColor-titles : #1a3b5c;
+$adminColor-text   : #1a1b1c;
+
+$adminColor-table-borders: $color-gray;
+$adminColor-table-stripe-bg: mix($adminColor-accent, $color-white, 5);
+
+// Derivados
+
+$adminColor-links--active : darken($adminColor-links, 5);
+$adminMenu-activeTab-bg: $adminColor-accent;
+$adminMenu-hoverTab-color: $adminColor-accent;
+$adminMenu-hoverTab-icon-color: $adminColor-accent;
+
+$adminMenu-hoverTab-bg: darken($adminMenu-bg, 2.5);
+$adminMenu-submenuBg : darken( $adminMenu-bg, 5);
+$adminMenu-lines : lighten( $adminMenu-bg, 5);

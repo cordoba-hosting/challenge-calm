@@ -1,0 +1,42 @@
+$blok-party-spacing : (
+    "small" : 4.8,
+    "regular" : 8.8,
+    "large" : 12.8,
+    "huge" : 18.0
+);
+
+$blok-party-backgrounds : (
+    "red" : #ff0000,
+    "blue" : #0000ff
+);
+
+.blok-party {
+    margin-left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+
+    // ADMIN STYLES
+    // remove 281px from the width when sidebar is open
+    @at-root .edit-post-layout.is-sidebar-opened &{
+        width: calc(100vw - 281px);
+    }
+
+    @each $color-name, $color-value in $blok-party-backgrounds {
+        &.--bg-#{$color-name}{
+            background-color: $color-value;
+        }
+    }
+
+    @each $size, $padding in $blok-party-spacing {
+        &.--space-top-#{$size}{
+            padding-top: $padding * 1rem;
+        }
+        &.--space-bottom-#{$size}{
+            padding-bottom: $padding * 1rem;
+        }
+        &.--space-top-negative.--previous-#{$size}{
+            margin-top: (40 - $padding) * 1rem;
+        }
+    }
+
+}

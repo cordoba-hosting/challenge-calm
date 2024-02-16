@@ -1,0 +1,6 @@
+.headline-blok {
+  padding: $padding-mobile;
+  @include respond(min-md) {
+    padding: $padding-desktop;
+  }
+}

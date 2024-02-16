@@ -1,0 +1,47 @@
+.iframe {
+  padding: 3rem;
+  @include respond(min-md) {
+    padding: 5rem 0;
+  }
+  &__container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    &--sixteen-nine {
+      padding-block-start: 56.25%;
+    }
+    &--eight-five {
+      padding-block-start: 62.5%;
+    }
+    &--three-two {
+      padding-block-start: 66.66%;
+    }
+    &--four-three {
+      padding-block-start: 75%;
+    }
+    &--one-one {
+      padding-block-start: 100%;
+    }
+    &--three-four {
+      padding-block-start: 133.33%;
+    }
+    &--two-three {
+      padding-block-start: 150%;
+    }
+    &--five-eight {
+      padding-block-start: 160%;
+    }
+    &--nine-sixteen {
+      padding-block-start: 177.77%;
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
