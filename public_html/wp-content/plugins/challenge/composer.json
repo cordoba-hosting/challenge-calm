@@ -4,7 +4,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Challenge\\": "public_html/wp-content/plugins/challenge/src/"
+            "Challenge\\": "public_html/wp-content/plugins/Challenge/src/"
         }
     },
     "require-dev": {

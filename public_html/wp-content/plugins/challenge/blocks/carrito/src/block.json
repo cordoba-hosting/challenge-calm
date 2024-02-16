@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/carrito",
+	"version": "0.1.0",
+	"title": "Carrito",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"attributes": {
+		"productoXPrecio": {
+			"type": "integer"
+		},
+		"productoXPeso": {
+			"type": "integer"
+		},
+		"productoXCantidad": {
+			"type": "integer"
+		},
+		"productoYPrecio": {
+			"type": "integer"
+		},
+		"productoYPeso": {
+			"type": "integer"
+		},
+		"productoYCantidad": {
+			"type": "integer"
+		},
+		"productoZPrecio": {
+			"type": "integer"
+		},
+		"productoZPeso": {
+			"type": "integer"
+		},
+		"productoZCantidad": {
+			"type": "integer"
+		}
+	},
+	"supports": {
+		"color": {
+			"background": false,
+			"text": true
+		},
+		"html": false,
+		"typography": {
+			"fontSize": true
+		}
+	},
+	"textdomain": "carrito",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"render": "file:./render.php"
+}
