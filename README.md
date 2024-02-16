@@ -46,17 +46,4 @@
 
 ## Uso
 
-1. Accede a WordPress a través de http://localhost.
-
-2. Para asegurar el almacenamiento adecuado de cookies y credenciales, es recomendable acceder a través de un dominio. Puedes hacer esto configurando un dominio, por ejemplo, challenge.local, en /etc/hosts en el caso de macOS (sudo nano /etc/hosts).
-
-3. Dirígete a http://localhost y sigue el proceso de instalación de WordPress. La configuración de la base de datos ya está cargada en el wp-config de la imagen.
-
-4. Inicia sesión en WordPress y actualiza a la última versión si es necesario.
-
-5. Activa el plugin "Challenge Plugin".
-
-6. Para crear una página con funcionalidades del plugin, crea un bloque llamado "consume-api".
-
-7. ¡Listo! Puedes comenzar a utilizar el Challenge Plugin.
 
